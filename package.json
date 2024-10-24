@@ -1,0 +1,29 @@
+{
+  "name": "jamiepaul.io",
+  "description": "Personal Landing",
+  "author": "hello@jamiepaul.io",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "engines": {
+    "node": ">=20.13.1",
+    "npm": ">=10.8.1"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint": "eslint .",
+    "format": "prettier . --write"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.13.0",
+    "eslint": "^9.13.0",
+    "globals": "^15.11.0",
+    "prettier": "^3.3.3",
+    "vite": "^5.4.9"
+  },
+  "dependencies": {
+    "modern-normalize": "^3.0.1"
+  }
+}
