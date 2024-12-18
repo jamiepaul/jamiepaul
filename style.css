@@ -59,8 +59,12 @@ h1 {
   line-height: 1.8;
   margin-block: 1rem;
 
+  @media (max-width: 1000px) {
+    font-weight: 400;
+  }
+
   span {
-    @media (min-width: 547px) and (max-width: 1300px) {
+    @media (min-width: 547px) and (max-width: 1200px) {
       display: block;
     }
   }
