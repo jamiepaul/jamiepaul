@@ -1,0 +1,101 @@
+:root {
+  /*
+  Clamp Generator: https://chrisburnell.com/clamp-calculator/?font-size-root=16&viewport-min=320&viewport-max=1280&viewport-units=vw
+  */
+  --font-size-title: clamp(3.375rem, 1.833rem + 7.708vw, 8rem);
+  --font-size-lg: clamp(1rem, 0.792rem + 1.042vw, 1.625rem);
+  --font-size-md: clamp(1rem, 0.975rem + 0.125vw, 1.125rem);
+  --font-size-sm: clamp(0.875rem, 0.85rem + 0.125vw, 1rem);
+  --font-family-default: "Roboto Mono", monospace;
+  --font-family-display: "Roboto", sans-serif;
+
+  --grid-margin: clamp(1rem, -0.3rem + 6.5vw, 7.5rem);
+}
+
+a {
+  color: currentColor;
+  text-decoration: inherit;
+}
+
+a:hover {
+  color: #535bf2;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: var(--font-family-default);
+  font-size: var(--font-size-md);
+  font-style: normal;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  line-height: 1.5;
+  color-scheme: light dark;
+  color: light-dark(#213547, rgba(255, 255, 255, 0.87));
+  background-color: light-dark(#ffffff, #242424);
+  text-rendering: optimizeLegibility;
+  overflow-x: hidden;
+}
+
+main {
+  height: 100dvh;
+}
+
+.container {
+  margin: 0 var(--grid-margin);
+}
+
+.header {
+  padding-block: 2em;
+}
+
+h1 {
+  font-family: var(--font-family-display);
+  font-weight: 900;
+  font-size: var(--font-size-title);
+  line-height: 1;
+  margin-block: 0 0.25rem;
+}
+
+.lead {
+  font-size: var(--font-size-lg);
+  line-height: 1.8;
+  margin-block: 1rem;
+
+  @media (max-width: 1000px) {
+    font-weight: 400;
+  }
+
+  span {
+    @media (min-width: 547px) and (max-width: 1200px) {
+      display: block;
+    }
+  }
+}
+
+.social-links {
+  display: flex;
+  flex-flow: row nowrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 2.5rem;
+  margin-block-start: 2.2rem;
+
+  a {
+    display: block;
+  }
+
+  svg {
+    fill: currentColor;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
