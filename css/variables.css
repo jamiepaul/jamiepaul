@@ -1,0 +1,42 @@
+:root {
+  /* TYPOGRAPHY
+  Clamp Generator: https://chrisburnell.com/clamp-calculator/?font-size-root=16&viewport-min=320&viewport-max=1280&viewport-units=vw */
+  --font-size-lg: clamp(1rem, 0.792rem + 1.042vw, 1.625rem);
+  --font-size-md: clamp(1rem, 0.975rem + 0.125vw, 1.125rem);
+  --font-size-sm: clamp(0.875rem, 0.85rem + 0.125vw, 1rem);
+  --font-family-default: "Roboto Mono", monospace;
+  --font-family-display: "Roboto", sans-serif;
+
+  /* Layout */
+  --grid-margin: clamp(1rem, -0.3rem + 6.5vw, 7.5rem);
+
+  /* Color Palette */
+  --color-tint-0: rgb(255, 255, 255);
+  --color-tint-1: rgb(250, 250, 250);
+  --color-tint-2: rgb(246, 246, 246);
+  --color-tint-3: rgb(241, 241, 241);
+  --color-tint-4: rgb(236, 236, 236);
+  --color-tint-5: rgb(232, 232, 232);
+  --color-tint-6: rgb(227, 227, 227);
+  --color-tint-7: rgb(222, 222, 222);
+  --color-tint-8: rgb(218, 218, 218);
+  --color-tint-9: rgb(213, 213, 213);
+  --color-tint-10: rgb(209, 209, 209);
+
+  --color-shade-0: rgb(0, 0, 0);
+  --color-shade-1: rgb(22, 22, 22);
+  --color-shade-2: rgb(37, 37, 37);
+  --color-shade-3: rgb(53, 53, 53);
+  --color-shade-4: rgb(70, 70, 70);
+  --color-shade-5: rgb(88, 88, 88);
+  --color-shade-6: rgb(106, 106, 106);
+  --color-shade-7: rgb(125, 125, 125);
+  --color-shade-8: rgb(144, 144, 144);
+  --color-shade-9: rgb(163, 163, 163);
+  --color-shade-10: rgb(183, 183, 183);
+
+  /* Cards */
+  --card-shadow-top: rgb(255, 255, 255);
+  --card-shadow-bottom: rgb(204, 204, 204);
+  --card-bg: rgb(236, 236, 236);
+}
